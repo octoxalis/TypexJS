@@ -1,6 +1,6 @@
-# [TypeJS](https://typejs.netlify.com)
+# [TypexJS](https://typexjs.netlify.com) specification site
 
 
-Adding pseudo typing to JavaScript
+A simple naming scheme to adding pseudo typing to JavaScript
 
-Follow these [instructions](https://typejs.netlify.com/index.html).
+Follow these [instructions](https://typexjs.netlify.com/index.html).
