@@ -103,9 +103,7 @@ Consequently, if a function doesn't return anything
 
 { .half_width }
 
-`const awesome__s = () => 'An awesome String'`
-{data--="example"}
-
+`const awesome__s = () => 'An awesome String'`<br/>
 `const clone__s = awesome__s`
 {data--="example"}
 
