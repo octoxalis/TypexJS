@@ -52,9 +52,9 @@ a language like Typescript has been created as a remedy to that important lack o
 .
 Even for code modules counting less than a few tens of lines, it's easy to forget what exactly is the type of a variable declared at the begining of the file and then make a mistake when assining a wrong type to that variable.
 
-{{A_o.NAME_s}} adopts a simple recipe to avoid such mistakes: only adding a mnemonic letter at the end of each identifier to specify the variable type
+{{A_o.NAME_s}} is a simple convention designed to avoid such mistakes: by only adding a mnemonic letter at the end of each identifier to specify the variable type
 {% _short_note %}
-this naming scheme is also invaluable for constants!
+of course, this scheme also applies to constants!
 {% end_short_note %}
 .
 
@@ -64,7 +64,7 @@ This simple adjonction has two main benefices:
 
 { data--="ulist" }
 
-Just an example: the JavaScript `String.prototype.split` method returns an array of Strings:
+Just an example, the JavaScript `String.prototype.split` method returns an array of Strings:
 
 {% _code_block %}
     title_s: 'MDN web doc',
@@ -81,8 +81,8 @@ Two different words for two tightly related entities! Isn't it semantically more
     title_s: '{{A_o.ID_s}}: Pseudo-typed identifiers',
     lang_s: 'javascript',
 [//]:#(_code_block)
-var lazyDog_s = 'The quick brown fox jumps over the lazy dog.';
-var lazyDog_a = lazyDog_s.split(' ');
+var sentence_s = 'The quick brown fox jumps over the lazy dog.';
+var sentence_a = sentence_s.split(' ');
 {% end_code_block %}
 
 
@@ -96,13 +96,14 @@ with smart inline type coercion tricks!
     title_s: '{{A_o.ID_s}}: Tricky pseudo-typed identifiers',
     lang_s: 'javascript',
 [//]:#(_code_block)
-const number_s = '123'
-let   number_n = +number_s               //: to Number
-const greaterNumber_n = '' + ++number_n  //: to String
+let number_s = '123'
+let number_n = +number_s    //: cast to Number
+number_s = '' + ++number_n  //: cast to String
 {% end_code_block %}
 
 
-Continue with [specifiers] definitions.
+The minimalist and easy to memorize convention define by **{{A_o.NAME_s}}** can help you to write a cleaner and more meaninful code while shortening its documentation.
+Follow on with [specifiers] definitions.
 
 
 [comment]: # (======== Links ========)

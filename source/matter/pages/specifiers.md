@@ -23,7 +23,7 @@ About types and specificity{ data--="page_intro" }
 {% end_anchor %}
 
 
-{{A_o.NAME_s}} naming scheme applies to all primitive immutable types:
+**{{A_o.NAME_s}}** naming scheme applies to all primitive immutable types:
 + Null
 + Undefined
 + Boolean
@@ -38,23 +38,27 @@ About types and specificity{ data--="page_intro" }
 
 
 It extends to specific Object types:
-+ Function
 + Class
 + RegExp
++ Function
 
 { data--="ulist" }
 
 
-The suffix specifying the type is a single letter preceded by an underscore character, lowercase letters for "wrapped" types
+The suffix specifying the type is an underscore character followed by a single letter:
++ **lowercase** for "wrapped" types
 {% _short_note %}
 Boolean, Number, BigInt, String, Array, Object, Symbol, Function, Class, RegExp.
-See [ MDN Primitive description]{{U_o.OUTLINK_s}}.
+See [ MDN Primitive description]{{U_o.OUTLINK_s}}
 {% end_short_note %}
-, uppercase letters for "unwrapped" types
+,
++ **uppercase** for "unwrapped" types
 {% _short_note %}
 Null, Undefined.
 {% end_short_note %}
-.
+
+{ data--="ulist" }
+
 
 
 | Type       | Suffix |
@@ -74,7 +78,7 @@ Null, Undefined.
 { .half_width }
 
 To convey even more meaningful information, function identifiers follow a slightly different scheme:
-two underscore characters before the type specifier **of the returned value**.
+**two underscore** characters before the type specifier **of the returned value**.
 Consequently, if a function doesn't return anything
 {% _short_note %}
 `void` function
@@ -137,24 +141,24 @@ const DOM_siblings__a = selector_s =>
 
 const DOM_listReverse = selector_s =>
 {
-  const nodes_a = Array.prototype.slice.call(document.querySelectorAll( `${selector_s} li` ))
-  nodes_a.forEach( node_e => node_e.parentNode.insertBefore( node_e, node_e.parentNode.firstChild ) )
+  const node_a = Array.prototype.slice.call(document.querySelectorAll( `${selector_s} li` ))
+  node_a.forEach( node_e => node_e.parentNode.insertBefore( node_e, node_e.parentNode.firstChild ) )
 }
 {% end_code_block %}
 
 
-The previous code shows an **exception** to the specifiers convention used: for `DOM` elements, it seems more appropriate to use the `_e` suffix
+The previous code shows an **exception** to the specifiers convention used by **{{A_o.NAME_s}}**: for `DOM` elements, it seems more appropriate to use the `_e` suffix
 {% _short_note %}
-for _element_, because the N suffix is already used for a Null value
+for _element_, because the __N_ suffix is already used for a `Null` value
 {% end_short_note %}
 than the `_o` suffix used for `Object`.
 
 
-The example code shows another benefice of the {{A_o.NAME_s}} naming scheme: we can instantly differenciate JavaScript and browser specific functions or methods from our own code functions and methods.
+The example code shows another singularity:: we can instantly differenciate JavaScript and browser specific functions or methods from our own code functions and methods.
 Our identifiers have a letter suffix where JS and browser identifiers have nothing. Therefore, we can safely use exactly the same names:
 
-`const MyWindow = Window`<br/>
-`const Window_o = Window    // smarter isn't it?`
+`const myWindow = window`<br/>
+`const window_o = window    // smarter isn't it?`
 {data--="example"}
 
 Hence, everytime we want to override some JavaScript or DOM function
