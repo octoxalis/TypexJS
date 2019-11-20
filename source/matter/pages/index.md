@@ -102,7 +102,7 @@ number_s = '' + ++number_n  //: cast to String
 {% end_code_block %}
 
 
-The minimalist and easy to memorize convention define by **{{A_o.NAME_s}}** can help you to write a cleaner and more meaninful code while shortening its documentation.
+The minimalist and easy to memorize convention defined by **{{A_o.NAME_s}}** can help you to write a cleaner and more meaninful code while shortening its documentation.
 Follow on with [specifiers] definitions.
 
 
