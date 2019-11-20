@@ -8,7 +8,7 @@ const DOM_siblings__a = selector_s =>
       .call( node_e.parentNode.children, sibling_e => sibling_e !== node_e )
 }
 <br/>
-const DOM_listReverse = selector_s =>
+const DOM_listReverse__v = selector_s =>
 {
   const node_a = Array.prototype.slice.call(document.querySelectorAll( `${selector_s} li` ))
   node_a.forEach( node_e => node_e.parentNode.insertBefore( node_e, node_e.parentNode.firstChild ) )
