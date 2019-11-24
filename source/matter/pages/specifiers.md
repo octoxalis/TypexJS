@@ -48,7 +48,8 @@ It extends to specific Object types:
 The suffix specifying the type is an underscore character followed by a single letter:
 + **lowercase** for "wrapped" types
 {% _short_note %}
-Boolean, Number, BigInt, String, Array, Object, Symbol, Function, Class, RegExp.
+Boolean, Number, String, Array, Object, Symbol, Function, Class, RegExp.
+BigInt type is listed in the [number page].
 See [ MDN Primitive description]{{U_o.OUTLINK_s}}
 {% end_short_note %}
 ,
@@ -67,7 +68,6 @@ Null, Undefined.
 | Undefined  | __U_   |
 | Boolean    | __b_   |
 | Number     | __n_   |
-| BigInt     | __i_   |
 | String     | __s_   |
 | Array      | __a_   |
 | Object     | __o_   |
@@ -91,7 +91,6 @@ Consequently, if a function doesn't return anything
 | Undefined          | ___U_  |
 | Boolean            | ___b_  |
 | Number             | ___n_  |
-| BigInt             | ___i_  |
 | String             | ___s_  |
 | Array              | ___a_  |
 | Object             | ___o_  |
@@ -169,3 +168,4 @@ or any browser specific, third-party library function, etc.
 [comment]: # (======== Links ========)
 
 [ MDN Primitive description]: https://developer.mozilla.org/en-US/docs/Glossary/Primitive
+[number page]: ./numbers.html
