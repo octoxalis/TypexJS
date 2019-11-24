@@ -66,7 +66,7 @@ To memorize easily those number specifiers, one has to think that numbers are at
 and the number appended after the specifier letter means: left shift 32 (bits) by 1 or 2.
 {% _short_note %}
 `64 = 32 << 1`<br/>
-`128 = 32 << 2`
+`128 = 32 << 2`<br/>
 for the sake of brevity, there is no _0_ after the letter (_i_ or _f_) for 32-bit number types
 {% end_short_note %}
 .
