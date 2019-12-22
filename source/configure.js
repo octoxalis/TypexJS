@@ -18,4 +18,6 @@ module.exports =
     GLOBAL_s:   'JavaScript,type,naming,scheme,suffix',
   },
 
+  HUE_P_n: 0,    //: theme primary color in range [0...359]
+
 }

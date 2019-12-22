@@ -7,6 +7,7 @@
   eleventyExcludeFromCollections: false,
   no_comments: false,
 
+  rank_n:     3,
   title_s:    `Number specifiers`,
   subtitle_s: `List of number specifiers`,
   abstract_s: `Extended types specifiers for numbers`,

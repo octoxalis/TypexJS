@@ -7,6 +7,7 @@
   eleventyExcludeFromCollections: false,
   no_comments: false,
 
+  rank_n:     1,
   title_s:    `Specifiers`,
   subtitle_s: `List of specifiers`,
   abstract_s: `Maping types and specifiers`,
@@ -78,12 +79,16 @@ Null, Undefined.
 { .half_width }
 
 To convey even more meaningful information, function identifiers follow a slightly different scheme:
-**two underscore** characters before the type specifier **of the returned value**.
++ **two underscore** characters before the type specifier **of the returned value**.
 Consequently, if a function doesn't return anything
 {% _short_note %}
 `void` function
 {% end_short_note %}
-, we use the _v_ letter for its suffix!
+, we use the _v_ letter for its suffix
+{% _short_note %}
+a possible alternative is to use the undefined value: _U_
+{% end_short_note %}
+.
 
 | Function return is | Suffix |
 | -------------------|:------:|
@@ -151,7 +156,7 @@ for _element_, because the __N_ suffix is already used for a `Null` value
 than the `_o` suffix used for `Object`.
 
 
-The example code shows another singularity:: we can instantly differenciate JavaScript and browser specific functions or methods from our own code functions and methods.
+The example code shows another singularity: we can instantly differenciate JavaScript and browser specific functions or methods from our own code functions and methods.
 Our identifiers have a letter suffix where JS and browser identifiers have nothing. Therefore, we can safely use exactly the same names:
 
 `const myWindow = window`<br/>

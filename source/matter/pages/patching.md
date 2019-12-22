@@ -7,6 +7,7 @@
   eleventyExcludeFromCollections: false,
   no_comments: false,
 
+  rank_n:     2,
   title_s:    `Clean patch`,
   subtitle_s: `How to patch libraries`,
   abstract_s: `Semantically patching librariees functions`,
