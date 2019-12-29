@@ -9,10 +9,10 @@
   --c_hue_d: calc( var(--c_hue_base) + {{C_o.HUE_D_n}} );
 
   --c_sat:       50%;
-    --c_sat_hi:  90%;
-    --c_sat_mhi: 75%;
-    --c_sat_mlo: 25%;
-    --c_sat_lo:  10%;
+    --c_sat_hi:  94%;
+    --c_sat_mhi: 72%;
+    --c_sat_mlo: 28%;
+    --c_sat_lo:  6%;
 
   --lum_mode:     {{C_o.LUM_MODE_n}};
   --lum_contrast: {{C_o.LUM_CONTRAST_n}};
