@@ -79,7 +79,7 @@ This simple adjonction has two main benefices:
 Just an example, the JavaScript `String.prototype.split` method returns an array of Strings:
 
 {% _code_block %}
-    title_s: 'MDN web doc',
+    title_s: '#MDN web doc',
     lang_s: 'javascript',
 [//]:#(_code_block)
 var str = 'The quick brown fox jumps over the lazy dog.';
@@ -90,7 +90,7 @@ var words = str.split(' ');
 Two different words for two tightly related entities! Isn't it semantically more meaningful to use the same identifier with different specifiers?
 
 {% _code_block %}
-    title_s: '{{A_o.ID_s}}: Pseudo-typed identifiers',
+    title_s: '#{{A_o.ID_s}}: Pseudo-typed identifiers',
     lang_s: 'javascript',
 [//]:#(_code_block)
 var sentence_s = 'The quick brown fox jumps over the lazy dog.';
@@ -105,7 +105,7 @@ with smart inline type coercion tricks!
 :
 
 {% _code_block %}
-    title_s: '{{A_o.ID_s}}: Tricky pseudo-typed identifiers',
+    title_s: '#{{A_o.ID_s}}: Tricky pseudo-typed identifiers',
     lang_s: 'javascript',
 [//]:#(_code_block)
 let number_s = '123'

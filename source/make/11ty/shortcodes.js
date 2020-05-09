@@ -51,8 +51,11 @@ const CODES_o =
   {
     let [ content_a, content_o ] = SPLIT__a( content_s, '_code_block' )
     let content_a1_s = content_a[1].replace( /\n\n+/g, '\n<br/>\n' )  //: avoid Markdown <p> insert
+    const title_s = content_o.title_s.charAt(0) === '#' ?  //: # for nonlink title
+      content_o.title_s.slice(1) :    //: strip starting '#' char
+      F_o.codeUrl__s( content_o.title_s )
     return `<hgroup data--="code_ref">
-<h5>${F_o.codeUrl__s( content_o.title_s )}</h5>
+<h5>${title_s}</h5>
 <h6><a href="https://prismjs.com" target="_blank" title="Highlighting provided by Prism.js">Prism</a></h6>
 </hgroup>
 <pre><code class="language-${content_o.lang_s}">${content_a1_s}</code></pre>`

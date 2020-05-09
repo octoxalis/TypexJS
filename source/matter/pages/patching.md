@@ -38,7 +38,7 @@ there is a good discussion about [different ways]{{U_o.OUTLINK_s}} of doing it: 
 
 
 {% _code_block %}
-    title_s: 'stackoverflow.com: how-can-i-cleanly-monkey-patch-a-function-in-javascript',
+    title_s: '#stackoverflow.com: how-can-i-cleanly-monkey-patch-a-function-in-javascript',
     lang_s: 'javascript',
 [//]:#(_code_block)
 const handler_o =

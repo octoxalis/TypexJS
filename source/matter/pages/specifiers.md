@@ -26,7 +26,6 @@ About types and specificity{ data--="page_intro" }
 {% end_anchor %}
 
 <slot-slice>
-<slot-css lib_prism/>
 <slot-css lib_table/>
 
 **{{A_o.NAME_s}}** naming scheme applies to all primitive immutable types:
@@ -65,8 +64,6 @@ Null, Undefined.
 {% end_note_txt %}
 
 { data--="ulist" }
-
-
 
 | Type       | Suffix |
 | -----------|:------:|
@@ -143,8 +140,9 @@ We could do the same for a variable accepting different kinds of type, but is it
 <slot-css lib_prism/>
 <slot-js prism_js/>
 
+
 {% _code_block %}
-    title_s: '{{A_o.ID_s}}/source/matrix/assets/scripts/js/parts/_dom_.js',
+    title_s: 'source/matrix/assets/scripts/js/parts/_dom_.js',
     lang_s: 'javascript',
 [//]:#(_code_block)
 const DOM_siblings__a = selector_s =>
