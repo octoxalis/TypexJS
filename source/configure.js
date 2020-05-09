@@ -11,7 +11,7 @@ module.exports =
   URL_s        : `https://typexjs.netlify.app/`,    //: CDN deployer
   LOCAL_s      : 'http://127.0.0.1:8080/',          //: local address and port for development
   COLLECTION_s : 'post',                            //: Eleventy tag for posts collection
-  LANGUAGE_s:   'en',                              //: Site language
+  LANGUAGE_s:    'en',                              //: Site language
   
   description_o:                                    //: descriptions for SEO
   {
