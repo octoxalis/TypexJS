@@ -1,0 +1,52 @@
+<div data-slot=1>
+<script>window.parent.DOM_o.enableLink__v('prism_css')</script>
+
+<script>window.parent.DOM_o.enableLink__v('lib_prism')</script>
+
+<script>window.parent.DOM_o.enableScript__v('prism_js', true )</script>
+
+<p>Every developer knows that JavaScript is not a static typed language, a useful feature eliminating lots of bugs
+<ins data--="note_txt"><sup></sup><span data--="note_content">a language like Typescript has been created as a remedy to that important lack of safety
+</span></ins>.
+Even for code modules counting less than a few tens of lines, it’s easy to forget what exactly is the type of a variable declared at the begining of the file and then make a mistake when assining a wrong type to that variable.</p>
+<p>TypexJS is a simple convention designed to avoid such mistakes: by only adding a mnemonic letter at the end of each identifier to specify the variable type
+<ins data--="note_txt"><sup></sup><span data--="note_content">of course, this scheme also applies to constants!
+</span></ins>.</p>
+<p>This simple adjonction has two main benefices:</p>
+<ul data--="ulist">
+<li>it gathers tightly related variables in a consistent semantic field;</li>
+<li>it simplifies identifier derivations.</li>
+</ul>
+<p>Just an example, the JavaScript <code>String.prototype.split</code> method returns an array of Strings:</p>
+<hgroup data--="code_ref">
+<h5><a href="https://github.com/octoxalis/typexjs/blob/master/MDN web doc" target="_blank">typexjs/MDN web doc</a></h5>
+<h6><a href="https://prismjs.com" target="_blank" title="Highlighting provided by Prism.js">Prism</a></h6>
+</hgroup>
+<pre><code class="language-javascript">
+var str = 'The quick brown fox jumps over the lazy dog.';
+var words = str.split(' ');
+</code></pre>
+<p>Two different words for two tightly related entities! Isn’t it semantically more meaningful to use the same identifier with different specifiers?</p>
+<hgroup data--="code_ref">
+<h5><a href="https://github.com/octoxalis/typexjs/blob/master/typexjs: Pseudo-typed identifiers" target="_blank">typexjs/typexjs: Pseudo-typed identifiers</a></h5>
+<h6><a href="https://prismjs.com" target="_blank" title="Highlighting provided by Prism.js">Prism</a></h6>
+</hgroup>
+<pre><code class="language-javascript">
+var sentence_s = 'The quick brown fox jumps over the lazy dog.';
+var sentence_a = sentence_s.split(' ');
+</code></pre>
+<p>A more tricky example
+<ins data--="note_txt"><sup></sup><span data--="note_content">with smart inline type coercion tricks!
+</span></ins>:</p>
+<hgroup data--="code_ref">
+<h5><a href="https://github.com/octoxalis/typexjs/blob/master/typexjs: Tricky pseudo-typed identifiers" target="_blank">typexjs/typexjs: Tricky pseudo-typed identifiers</a></h5>
+<h6><a href="https://prismjs.com" target="_blank" title="Highlighting provided by Prism.js">Prism</a></h6>
+</hgroup>
+<pre><code class="language-javascript">
+let number_s = '123'
+let number_n = +number_s    //: cast to Number
+number_s = '' + ++number_n  //: cast to String
+</code></pre>
+<p>The minimalist and easy to memorize convention defined by <strong>TypexJS</strong> can help you to write a cleaner and more meaninful code while shortening its documentation.
+Follow on with <a href="./specifiers.html">specifiers</a> definitions.</p>
+<div>

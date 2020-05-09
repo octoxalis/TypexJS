@@ -2,16 +2,18 @@
 {
   date:      `2019-11-18`,
   layout:    `frame.njk`,
-  permalink: `patching.html`,
+  permalink: `posts/patching.html`,
   tags:      [ `post` ],
   eleventyExcludeFromCollections: false,
-  no_comments: false,
+  //XX no_comment: true,
 
   rank_n:     2,
   title_s:    `Clean patch`,
   subtitle_s: `How to patch libraries`,
   abstract_s: `Semantically patching librariees functions`,
   author_s:   `octoxalis`,
+  
+  sitemap_b: true,
 }
 ---
 [comment]: # (======== Post ========)
@@ -20,14 +22,18 @@
 How to keep coherancy while patching{ data--="page_intro" }
 
 {% _anchor %}
-### Semantic monkey
+## Semantic monkey
 {% end_anchor %}
 
+<slot-slice>
+<slot-css prism_css/>
+<slot-css lib_prism/>
+<slot-js prism_js/>
 
 A useful application of {{A_o.NAME_s}} naming scheme is when we want to [monkey patch]{{U_o.OUTLINK_s}} a library function, using a proxy, as we should do
-{% _short_note %}
+{% _note_txt %}
 there is a good discussion about [different ways]{{U_o.OUTLINK_s}} of doing it: the following example is extracted from its proxy case.
-{% end_short_note %}
+{% end_note_txt %}
 :
 
 
@@ -58,6 +64,7 @@ log_o.apply( null, ['Hello'] )
 //-> log__v is invoked with argument: Hello
 {% end_code_block %}
 
+</slot-slice>
 
 [comment]: # (======== Links ========)
 

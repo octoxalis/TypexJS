@@ -5,12 +5,14 @@
   permalink: `index.html`,
   tags:      [ `notag` ],
   eleventyExcludeFromCollections: false,
-  no_comments: false,
+  //XX no_comment: true,
 
   title_s:    `Welcome`,
   subtitle_s: `Typed JavaScript blog`,
   abstract_s: `How to add pseudo typing to JavaScript`,
   author_s:   `octoxalis`,
+  
+  sitemap_b: true,
 }
 ---
 [comment]: # (======== Post ========)
@@ -22,40 +24,50 @@ A naming scheme for pseudo-typed JavaScript.{ data--="page_intro" }
 ## Lex parsimoniae
 {% end_anchor %}
 
+<slot-slice>
 
 One of the most useful principle of software developing which should be kept in mind permanently is not a new one.
-Actually, it's an almost millenial assertion: **<q>Entities must not be multiplied without necessity</q>**
-{% _short_note %}
-<q>_non sunt multiplicanda entia sine necessitate_</q> (see [Occam's razor]{{U_o.OUTLINK_s}}).<br/>
-In medieval times, this sentence was a response to one of the most debated apory of platonism philosophy, namely the [Quarrel of Universals]{{U_o.OUTLINK_s}}.
-{% end_short_note %}
+Actually, it's an almost millenial assertion: <q>Entities must not be multiplied without necessity</q>
+{% _note_txt %}
+<q>non sunt multiplicanda entia sine necessitate</q>  
+( [Occam's razor]{{U_o.OUTLINK_s}} ).  
+In medieval times, this sentence was a response to one of the most debated apory of platonism philosophy,
+namely the  
+[Quarrel of Universals]{{U_o.OUTLINK_s}}.
+{% end_note_txt %}
 .
-But its validity still remains for sofware engineering and have been adaptated in many ways
-{% _short_note %}
+
+Whatever its antiquity, its validity still remains for sofware engineering and have been adaptated in many ways
+{% _note_txt %}
 the [KISS]{{U_o.OUTLINK_s}} principle is one among [others]{{U_o.OUTLINK_s}}
-{% end_short_note %}
+{% end_note_txt %}
 .
 
 
 What are the implications of such a _law_ for a JavaScript programmer? And why is a computer language typing concept related to it?
 
+</slot-slice>
 
 {% _anchor %}
 ## A dispute of names and types
 {% end_anchor %}
 
+<slot-slice>
+<slot-css prism_css/>
+<slot-css lib_prism/>
+<slot-js prism_js/>
 
 Every developer knows that JavaScript is not a static typed language, a useful feature eliminating lots of bugs
-{% _short_note %}
+{% _note_txt %}
 a language like Typescript has been created as a remedy to that important lack of safety
-{% end_short_note %}
+{% end_note_txt %}
 .
 Even for code modules counting less than a few tens of lines, it's easy to forget what exactly is the type of a variable declared at the begining of the file and then make a mistake when assining a wrong type to that variable.
 
 {{A_o.NAME_s}} is a simple convention designed to avoid such mistakes: by only adding a mnemonic letter at the end of each identifier to specify the variable type
-{% _short_note %}
+{% _note_txt %}
 of course, this scheme also applies to constants!
-{% end_short_note %}
+{% end_note_txt %}
 .
 
 This simple adjonction has two main benefices:
@@ -87,9 +99,9 @@ var sentence_a = sentence_s.split(' ');
 
 
 A more tricky example
-{% _short_note %}
+{% _note_txt %}
 with smart inline type coercion tricks!
-{% end_short_note %}
+{% end_note_txt %}
 :
 
 {% _code_block %}
@@ -105,12 +117,13 @@ number_s = '' + ++number_n  //: cast to String
 The minimalist and easy to memorize convention defined by **{{A_o.NAME_s}}** can help you to write a cleaner and more meaninful code while shortening its documentation.
 Follow on with [specifiers] definitions.
 
+</slot-slice>
 
 [comment]: # (======== Links ========)
 
 [specifiers]: ./specifiers.html
 
-[Occam's razor]: http://www.irishphilosophy.com/2014/05/27/who-sharpened-occams-razor/
+[Occam's razor]: https://www.irishphilosophy.com/2014/05/27/who-sharpened-occams-razor/
 [Quarrel of Universals]: https://en.wikipedia.org/wiki/Problem_of_universals
 [KISS]: https://en.wikipedia.org/wiki/KISS_principle
 [others]: https://effectivesoftwaredesign.com/2013/08/05/simplicity-in-software-design-kiss-yagni-and-occams-razor/

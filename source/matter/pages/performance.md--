@@ -1,0 +1,38 @@
+---js
+{
+  date: `2020-04-20`,
+  layout:    `frame.njk`,
+  permalink: `posts/performance.html`,
+  tags:      [ `post` ],
+
+  eleventyExcludeFromCollections: false,
+  //XX no_comment: true,
+
+  rank_n:     5,
+  title_s:    `Performance`,
+  subtitle_s: `Evaluate this site loading performance`,
+  abstract_s: `Testing real performance`,
+  author_s:   `Me`,
+
+  sitemap_b: true,
+}
+---
+[comment]: # (======== Post ========)
+# {{ A_o.ID_s }} use case
+
+About performance{ data--="page_intro" }
+
+{% _anchor %}
+## Timing API
+{% end_anchor %}
+
+<slot-slice>
+
+{% _more_to_come %}
+Speed index and Navigation Timing API
+{% end_more_to_come %}
+
+</slot-slice>
+
+
+[comment]: # (======== Links ========)
