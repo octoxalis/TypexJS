@@ -6,4 +6,4 @@ X-Content-Type-Options: nosniff
 Referrer-Policy: same-origin
 Feature-Policy: fullscreen 'self';midi 'self';notifications 'self';push 'self';sync-xhr 'self';microphone 'self';camera 'self';magnetometer 'self';gyroscope 'self';speaker 'self';vibrate 'self';
 Timing-Allow-Origin: "https://typexjs.netlify.app/"
-Expires: Sat Jul 11 2020 17:34:19 GMT+0200 (Central European Summer Time)
+Expires: Sat Jul 11 2020 17:38:57 GMT+0200 (Central European Summer Time)
