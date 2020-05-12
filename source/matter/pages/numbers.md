@@ -5,7 +5,6 @@
   permalink: `posts/numbers.html`,
   tags:      [ `post` ],
   eleventyExcludeFromCollections: false,
-  //XX no_comment: true,
 
   rank_n:     3,
   title_s:    `Number specifiers`,
@@ -13,7 +12,7 @@
   abstract_s: `Extended types specifiers for numbers`,
   author_s:   `octoxalis`,
   
-  sitemap_b: true,
+  gh_issue_n: 4,
 }
 ---
 [comment]: # (======== Post ========)

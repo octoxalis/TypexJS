@@ -5,14 +5,13 @@
   permalink: `index.html`,
   tags:      [ `notag` ],
   eleventyExcludeFromCollections: false,
-  //XX no_comment: true,
 
   title_s:    `Welcome`,
   subtitle_s: `Typed JavaScript blog`,
   abstract_s: `How to add pseudo typing to JavaScript`,
   author_s:   `octoxalis`,
   
-  sitemap_b: true,
+  gh_issue_n: 1,
 }
 ---
 [comment]: # (======== Post ========)

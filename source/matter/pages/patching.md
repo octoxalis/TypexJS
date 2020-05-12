@@ -5,7 +5,6 @@
   permalink: `posts/patching.html`,
   tags:      [ `post` ],
   eleventyExcludeFromCollections: false,
-  //XX no_comment: true,
 
   rank_n:     2,
   title_s:    `Clean patch`,
@@ -13,7 +12,7 @@
   abstract_s: `Semantically patching librariees functions`,
   author_s:   `octoxalis`,
   
-  sitemap_b: true,
+  gh_issue_n: 3,
 }
 ---
 [comment]: # (======== Post ========)

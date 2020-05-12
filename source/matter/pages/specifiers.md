@@ -5,7 +5,6 @@
   permalink: `posts/specifiers.html`,
   tags:      [ `post` ],
   eleventyExcludeFromCollections: false,
-  //XX no_comment: true,
 
   rank_n:     1,
   title_s:    `Specifiers`,
@@ -13,7 +12,7 @@
   abstract_s: `Maping types and specifiers`,
   author_s:   `octoxalis`,
   
-  sitemap_b: true,
+  gh_issue_n: 2,
 }
 ---
 [comment]: # (======== Post ========)
