@@ -1,9 +1,9 @@
 /*
 Accept-Charset: utf-8
-Content-Security-Policy: frame-ancestors 'self';base-uri https://typexjs.netlify.app/;
+Content-Security-Policy: frame-ancestors 'self';base-uri http://127.0.0.1:8080/;
 X-Frame-Options: SAMEORIGIN
 X-Content-Type-Options: nosniff
 Referrer-Policy: same-origin
 Feature-Policy: fullscreen 'self';midi 'self';notifications 'self';push 'self';sync-xhr 'self';microphone 'self';camera 'self';magnetometer 'self';gyroscope 'self';speaker 'self';vibrate 'self';
-Timing-Allow-Origin: "https://typexjs.netlify.app/"
-Expires: Sat Jul 11 2020 18:02:21 GMT+0200 (Central European Summer Time)
+Timing-Allow-Origin: "http://127.0.0.1:8080/"
+Expires: Sun Jul 12 2020 08:01:07 GMT+0200 (Central European Summer Time)
