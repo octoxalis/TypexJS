@@ -25,7 +25,7 @@ Fetching and caching wasm functions{ data--="page_intro" }
 
 <slot-slice>
 <slot-css prism_css/>
-<slot-css lib_prism/>
+<slot-css prism_ui/>
 <slot-js prism_js/>
 
 To illustrate the semantic power of **{{A_o.NAME_s}}**, here is 

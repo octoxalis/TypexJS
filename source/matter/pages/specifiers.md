@@ -136,7 +136,7 @@ We could do the same for a variable accepting different kinds of type, but is it
 
 <slot-slice>
 <slot-css prism_css/>
-<slot-css lib_prism/>
+<slot-css prism_ui/>
 <slot-js prism_js/>
 
 

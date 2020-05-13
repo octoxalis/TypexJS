@@ -26,7 +26,7 @@ How to keep coherancy while patching{ data--="page_intro" }
 
 <slot-slice>
 <slot-css prism_css/>
-<slot-css lib_prism/>
+<slot-css prism_ui/>
 <slot-js prism_js/>
 
 A useful application of {{A_o.NAME_s}} naming scheme is when we want to [monkey patch]{{U_o.OUTLINK_s}} a library function, using a proxy, as we should do

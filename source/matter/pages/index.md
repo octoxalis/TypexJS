@@ -53,7 +53,7 @@ What are the implications of such a _law_ for a JavaScript programmer? And why i
 
 <slot-slice>
 <slot-css prism_css/>
-<slot-css lib_prism/>
+<slot-css prism_ui/>
 <slot-js prism_js/>
 
 Every developer knows that JavaScript is not a static typed language, a useful feature eliminating lots of bugs
